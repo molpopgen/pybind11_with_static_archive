@@ -45,7 +45,7 @@ jobs:
             mkdir build
             cd build
             cmake ..
-            make
+            make -j 2
       - name: Test
         shell: bash -l {0} #We need a login shell to get conda
         working-directory: build
